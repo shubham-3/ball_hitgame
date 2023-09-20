@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+}
+
+.pre {
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+#nm {
+    margin-left: 2%;
+    border: solid black;
+    margin-bottom: 1%;
+    height: 5%;
+    width: 35%;
+    font-size: auto;
+}
+
+.box {
+    border-radius: 5%;
+    width: 46%;
+    height: 63%;
+    overflow: hidden;
+    background-image: linear-gradient(blue, pink);
+}
+
+#topbox {
+    background-image: linear-gradient(rgb(0, 255, 0), rgb(203, 211, 155));
+    height: 10%;
+    overflow: hidden;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 0.125rem;
+    justify-content: center;
+    margin-top: 0.25%;
+}
+
+.inb {
+    font-weight: bold;
+    font-size:  100%;
+    padding: 0.0625rem 0.125rem;
+    color: rgb(210, 44, 44);
+    height: 40px;
+    width: 80px;
+    background-color: #0f0f0f;
+    font-family: "Audiowide", sans-serif;
+    border-radius: 0.3125rem;
+    flex-wrap: wrap;
+
+}
+.inb_b {
+    font-weight: bold;
+    font-size:  16px;
+    padding: 0.0625rem 0.125rem;
+    color: rgb(210, 44, 44);
+    height: 30px;
+    width: 30px;
+    background-color: #0f0f0f;
+    font-family: "Audiowide", sans-serif;
+    border-radius: 0.3125rem;
+    flex-wrap: wrap;
+}
+
+h3 {
+    font-family: "Audiowide", sans-serif;
+}
+#bbottom {
+    flex-wrap: wrap;
+    display: flex;
+    gap: .5rem;
+    margin: .5rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball {
+    width: 3rem;
+    height: 3rem;
+    font-family: "Audiowide", sans-serif;
+    border-radius: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    color: #0f0f0f;
+    font-size: 1.25rem;
+    display: flex;
+    cursor: pointer;
+    margin-top: 0.03125rem;
+}
+
+.ball1 {
+    transform: rotate3d(0, 1, 0, 180deg);
+}
+
+.fin {
+    margin-top: 8rem;
+    font-size: 2rem;
+    flex-wrap: nowrap;
+    font-family: "Audiowide", sans-serif;
+}
+@media screen and (max-width: 767px) {
+    
+}
